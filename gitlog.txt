@@ -1,0 +1,1115 @@
+commit acefe37755ad3757555d112177587efdf0470d20
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Thu Dec 7 15:38:36 2017 -0500
+
+    removed ship miss
+
+ gui.ml | 12 ------------
+ 1 file changed, 12 deletions(-)
+
+commit 8c94614e199c99e7e1b3c1f12afedfdec071d58b
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Thu Dec 7 00:33:58 2017 -0500
+
+    fixed do'
+
+ game.ml | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 8ad039e1d68611e6b0a80b4b1d46abe5262b05ea
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Thu Dec 7 00:18:23 2017 -0500
+
+    Updated Makefile
+
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 641d85de7b021f07f53feb8a23637f6a3b3b5bcf
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 23:59:34 2017 -0500
+
+    fixed bug in ai_place (account for overlap)
+
+ game.ml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit efb7f0ee35002c2b5c5f4b732749c76b80acdd33
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 23:38:02 2017 -0500
+
+    Command tests
+
+ command.ml |  4 ++--
+ test.ml    | 40 +++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 41 insertions(+), 3 deletions(-)
+
+commit d4dedd7625150431ee9512fcd8774f925e901625
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 22:54:15 2017 -0500
+
+    Removed cheat command and test.mli
+
+ game.ml  | 63 +++++++++++++++++++++++++--------------------------------------
+ main.ml  |  2 +-
+ test.ml  |  1 +
+ test.mli |  1 -
+ 4 files changed, 27 insertions(+), 40 deletions(-)
+
+commit 982ed6dd6a29bed6acd4669e9d4de6ced7544bb6
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 22:32:56 2017 -0500
+
+    Spec updates for other modules
+
+ ai.ml       |  5 +++++
+ ai.mli      |  1 -
+ command.ml  | 52 +---------------------------------------------------
+ command.mli | 45 +++++++++++++++------------------------------
+ game.mli    |  1 +
+ gui.ml      | 41 +++++++++++++----------------------------
+ gui.mli     | 18 ++++++++----------
+ 7 files changed, 43 insertions(+), 120 deletions(-)
+
+commit 2e93f5baa2859576a530ca97b216219a32daa962
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 22:14:55 2017 -0500
+
+    Spec updates for game
+
+ Makefile   |   2 +-
+ command.ml |   9 +-
+ game.ml    | 412 ++++++++++++++++++++++++++++---------------------------------
+ game.mli   | 148 +++++++---------------
+ main.ml    |  14 ++-
+ 5 files changed, 245 insertions(+), 340 deletions(-)
+
+commit 81bda35e9568366acdf8e17eb128e0970b0e3e34
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:59:30 2017 -0500
+
+    Update command.mli
+
+ command.mli | 29 ++++++++++++++---------------
+ 1 file changed, 14 insertions(+), 15 deletions(-)
+
+commit 2d846f2c245217770150a3c8d8d9c33db683c5bd
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:57:41 2017 -0500
+
+    Update command.mli
+
+ command.mli | 20 --------------------
+ 1 file changed, 20 deletions(-)
+
+commit e9871f5e117fd175c9614047fdf7598e726e64d5
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:56:52 2017 -0500
+
+    Update command.ml
+
+ command.ml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 15e29cec8958adfdf9c3d2e8a6a4ba063bd5212b
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:28:09 2017 -0500
+
+    updated specs
+
+ game.ml | 22 ++++++++++++----------
+ 1 file changed, 12 insertions(+), 10 deletions(-)
+
+commit 223829191dca6b643ef2384c054d37ed3f06842e
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:04:42 2017 -0500
+
+    Update timeline.txt
+
+ timeline.txt | 9 ++-------
+ 1 file changed, 2 insertions(+), 7 deletions(-)
+
+commit 0a734b1bc36a07cfa6fbca43be70ec8ccae9db3c
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 18:04:03 2017 -0500
+
+    handle case with too many words
+
+ command.ml | 40 ++++++++++++++++++++++++++++++----------
+ 1 file changed, 30 insertions(+), 10 deletions(-)
+
+commit 0a745a6a958f0aa8c98bce290a9d20096debed56
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Dec 6 17:48:25 2017 -0500
+
+    Update game.mli
+
+ game.mli | 156 +++++++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 116 insertions(+), 40 deletions(-)
+
+commit 917b820083ee8dfcfc5a5d8addeb4861e90b7a12
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 16:02:17 2017 -0500
+
+    Save old README
+
+ README.md | 59 -----------------------------------------------------------
+ 1 file changed, 59 deletions(-)
+
+commit 855226c08b9d58d84a4c14e787e9c4fe20b8f935
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 16:00:48 2017 -0500
+
+    Added required README with instructions
+
+ Makefile      |  2 +-
+ OLD_README.md | 58 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.txt    | 15 +++++++++++++++
+ 3 files changed, 74 insertions(+), 1 deletion(-)
+
+commit 7881c75baa99380156ed34cfd3c025bf3ea378df
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 15:50:03 2017 -0500
+
+    test.ml in progress
+
+ Makefile |   5 ++-
+ game.mli |   6 +--
+ test.ml  | 144 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 151 insertions(+), 4 deletions(-)
+
+commit 1535a029eae24c8f71e12f06774736495189140d
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Wed Dec 6 14:35:40 2017 -0500
+
+    Added make zip
+
+ Makefile | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 051eb93fb42b74337e7c287a20014bb1cdeb5e38
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Dec 5 19:28:54 2017 -0500
+
+    handle commands with too few / too many words
+
+ game.ml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 91955b3c7875708dfc84539c3ccb9729d4393608
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Dec 5 19:25:32 2017 -0500
+
+    handle cases with too few/ too many words
+
+ command.ml | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 2b9d151d77b23c5a6b98939924cae6bc2168a500
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Dec 5 19:24:51 2017 -0500
+
+    handle commands with too few/many words
+
+ game.ml | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+commit 6efb2578904d2f26bf59374840132a4635a2597f
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Dec 5 19:20:15 2017 -0500
+
+    updated instructions for game play
+
+ main.ml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit e3a0f2298078073d92a8f070ca95800db769f78d
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Dec 4 22:35:57 2017 -0500
+
+    Fixed turn bug and minor improvements
+
+ game.ml | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+commit ff9a7e52e3b8190768af677ffd2db95da9283cf5
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 22:01:01 2017 -0500
+
+    updated attack for advanced game
+
+ game.ml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 708aee928088797131c64208a1280a6ab4c693f6
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 16:28:25 2017 -0500
+
+    incorporated advanced gameplay
+
+ game.ml | 72 +++++++++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 55 insertions(+), 17 deletions(-)
+
+commit e6905d31700e2c3bc2d6122aca07014aad81922f
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Dec 4 16:07:03 2017 -0500
+
+    Fixed forfeit
+
+ ai.ml   |  1 -
+ game.ml | 33 +++++++++++++++------------------
+ 2 files changed, 15 insertions(+), 19 deletions(-)
+
+commit 4e3bfdfe3d197d98c466a5a17c6833bb1822aa9a
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:50:21 2017 -0500
+
+    updated attack, win/loss prompts game to end
+
+ game.ml | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit f85042e6c357dc9aa2d15491f304b167a7327070
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:37:23 2017 -0500
+
+    Update timeline.txt
+
+ timeline.txt | 16 +++++-----------
+ 1 file changed, 5 insertions(+), 11 deletions(-)
+
+commit 0b9d29fb51923d52ebdc226d8fd8db4945d08eda
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:17:38 2017 -0500
+
+    cleaned up code, extended game to 5 ships
+
+ game.ml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ee68e70582393fa584a244f382265844665fcae0
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:16:26 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit a7e106865669aa4c4da9bc4f885a8d6ebc26aa61
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:13:41 2017 -0500
+
+    Update game.ml
+
+ game.ml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2490e8a5fd2f85be4f7d54946a49476ba0b50f4b
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:11:20 2017 -0500
+
+    extend game to 5 ships, cleaned up
+
+ game.ml | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+
+commit fde6cd309b5f63c2fc97ac541aab86734fcd0716
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:08:07 2017 -0500
+
+    finished 5 ship game
+
+ README.md | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit d854331f4569bba05f38cba9a99b3ba3fb14561a
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:07:39 2017 -0500
+
+    updated instructions for 5 ships game
+
+ main.ml | 22 ++++++++++++++--------
+ 1 file changed, 14 insertions(+), 8 deletions(-)
+
+commit 5ef141a009fbd7dab7212de9c8b6ffb61622b26d
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:04:51 2017 -0500
+
+    got rid of ship type
+
+ game.mli | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 80076b9510ae86871ff792ba994b6a24cac0a20d
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:04:26 2017 -0500
+
+    extended to 5 ship game, cleaned up
+
+ game.ml | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit 2f85ce5446750b72e875a6061bc077707ffe01a6
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:04:08 2017 -0500
+
+    Extended to 5 ship game
+
+ game.ml | 50 ++++++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 38 insertions(+), 12 deletions(-)
+
+commit 92b22c562b5018287f150d24491a14b4be699af1
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 15:00:20 2017 -0500
+
+    ships are now orange or cyan
+
+ gui.ml | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+
+commit 95fbb50d0cec4d01787e0ac08df2c52ed59169e8
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Dec 4 14:54:55 2017 -0500
+
+    Fixed AI bugs
+
+ ai.ml | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+
+commit 19f4b33a5c27dba0c42e8d29ab75b70837c226de
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Dec 4 14:36:04 2017 -0500
+
+    Fixed AI random ship placement and more AI improvements
+
+ ai.ml   |  9 ++++++---
+ game.ml |  2 +-
+ main.ml | 12 +++++++++++-
+ 3 files changed, 18 insertions(+), 5 deletions(-)
+
+commit 456cd9ee9e949ed2e8fb575548174b809b53dd32
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 01:58:10 2017 -0500
+
+    Update README.md
+
+ README.md | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+
+commit a4e605ddf9af2b80c293fef5c63476e023fe8c32
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 01:46:57 2017 -0500
+
+    fixed placement bug where ships could overlap
+
+ game.ml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit fd39dea322f4bffaad73e8e4f2fd12458a7f42eb
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 01:42:09 2017 -0500
+
+    Update README.md
+
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit c58164a75c2a3f30612260cfae5abeea171d7156
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Dec 4 01:31:45 2017 -0500
+
+    fixed bug where vertical ships could overlap
+
+ game.ml | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit b606aa702f2c962421721cf34f8a34694edc5f77
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Dec 4 00:04:47 2017 -0500
+
+    AI improvements
+
+ ai.ml    | 30 +++++++++++++++---------------
+ game.ml  | 42 ++++++++++++++----------------------------
+ game.mli |  6 +++---
+ 3 files changed, 32 insertions(+), 46 deletions(-)
+
+commit 80dc89a8b5ce688f24bc8bbac82fe5a8af22fc79
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 23:49:57 2017 -0500
+
+    Update game.ml
+
+ game.ml | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit fdabf4b32bc502d808ae0a10e7831ec8e0b4a3f1
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 23:31:21 2017 -0500
+
+    Update game.ml
+
+ game.ml | 21 +++++++++++++++------
+ 1 file changed, 15 insertions(+), 6 deletions(-)
+
+commit 68d9f5827e96c5f29aa9145b7717886f81af341e
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sun Dec 3 22:44:20 2017 -0500
+
+    Fixed quitting and forfeit
+
+ game.ml |  6 ++++--
+ main.ml | 17 ++++++++++-------
+ 2 files changed, 14 insertions(+), 9 deletions(-)
+
+commit f94df902b45d53b9d2903218a8bf7dabc4448df5
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sun Dec 3 22:04:19 2017 -0500
+
+    Fixed gui bug that updated on invalid commands
+
+ game.ml | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+
+commit d180cd07add6543d1c841fd49e65bc466b641788
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sun Dec 3 21:48:43 2017 -0500
+
+    Full GUI working
+
+ README.md |  1 -
+ game.ml   | 45 +++++++++++++++++++++++++++------------------
+ game.mli  | 12 ++++++++++++
+ gui.ml    | 29 ++++++++++++++---------------
+ gui.mli   |  4 ++--
+ main.ml   |  7 ++++++-
+ 6 files changed, 61 insertions(+), 37 deletions(-)
+
+commit 6f69db32121af706e1bc6601aa6a76f650c2d010
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 20:20:40 2017 -0500
+
+    Update README.md
+
+ README.md | 15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+
+commit e2296fbc0bc3817b911fd4840fd9667f63cfe0d8
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 20:17:58 2017 -0500
+
+    Update gui.mli
+
+ gui.mli | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit dce04b7b3931b910d6f98e622fba81250aa1657b
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 20:17:05 2017 -0500
+
+    added ship_hit
+
+ gui.ml | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit 45719575b6c2900dd9c15ef10cc9b4856d75afc3
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 18:07:29 2017 -0500
+
+    Added in attack (need to work on ending game)
+
+ game.ml | 38 ++++++++++++++------------------------
+ 1 file changed, 14 insertions(+), 24 deletions(-)
+
+commit 2ce3d9bbf88ab680ab9eccd3ddfe0a07fc8aa796
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 17:22:51 2017 -0500
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit db8c519b4716a1ae23e11e2de9a9c0cd9a9afce8
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 16:40:52 2017 -0500
+
+    Update README.md
+
+ README.md | 6 ------
+ 1 file changed, 6 deletions(-)
+
+commit 19c2ffd6bfa08a5a84263c75e59b2346298d9425
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 16:40:32 2017 -0500
+
+    Update README.md
+
+ README.md | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 3c61e5d6597f114d86070d427208807d1e8828bc
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 16:39:20 2017 -0500
+
+    Update README.md
+
+ README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 1b6f8e8c53bffb5fb242da6e6c3a4ba13388e055
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 16:38:35 2017 -0500
+
+    Update README.md
+
+ README.md | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 46 insertions(+)
+
+commit d3aa39a76b8061e360d3fa872b104017f2f77edc
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sun Dec 3 15:59:57 2017 -0500
+
+    Changed to 10x10 board
+
+ gui.ml  | 2 +-
+ main.ml | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit ad079137047f8dbd902d91dd97c0d90d89dd15f4
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sun Dec 3 15:44:08 2017 -0500
+
+    Updated REPL with place ships GUI and added gui.mli
+
+ Makefile |  5 ++---
+ game.ml  | 57 ++++++++++++++++++++++++++-------------------------------
+ game.mli | 11 +++++++++--
+ gui.ml   | 32 ++++++++------------------------
+ gui.mli  | 17 +++++++++++++++++
+ main.ml  | 30 ++++++++++++++++++++++++------
+ main.mli |  4 ++--
+ 7 files changed, 88 insertions(+), 68 deletions(-)
+
+commit cd3c9de4251ab8c1551252148b356f0bb665d595
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 14:03:26 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 87f624ef17858c975a95a618a0125b31921e1a84
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 14:02:29 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 958e42744eb3af026c3a63e0a3024841aaa00fa9
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 01:13:24 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit bffd0eb4af68980997b9a9be724831075b208c33
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 01:13:00 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0f81102f5eba74dbd4ff6eb501565cec19892809
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 01:12:12 2017 -0500
+
+    Update README.md
+
+ README.md | 50 ++++++++++++++------------------------------------
+ 1 file changed, 14 insertions(+), 36 deletions(-)
+
+commit cee78dbab9017dde0263d91e9ba017734f8345fd
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Dec 3 00:44:50 2017 -0500
+
+    Update gui.ml
+    
+    Generalized code to work for any size board
+
+ gui.ml | 35 ++++++++++++++++++++++-------------
+ 1 file changed, 22 insertions(+), 13 deletions(-)
+
+commit 658b7c3551daff87563cab50bc22e1d8ef7e0e72
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 23:31:46 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 8 --------
+ 1 file changed, 8 deletions(-)
+
+commit 7bb7b6f99dd4f528ba17f6ce3471715f7812f014
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 23:21:48 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 55 ++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 46 insertions(+), 9 deletions(-)
+
+commit 7166e85e2bc7d1a246b7a0139bbb183471d42261
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 23:06:01 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 92 ++++++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 42 insertions(+), 50 deletions(-)
+
+commit 5e271532b5206fa2c87bc237ac76cf3852372773
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 22:36:39 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+commit b0a8ef1569ecba1dc54695b705c42c0c6e159137
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 22:35:14 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 56 +++++++++++++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 49 insertions(+), 7 deletions(-)
+
+commit c6344d7878673b76257bcb5885ba80fbccb9bfa8
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 21:41:40 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 13bad9ed9376b0bbc70b3335027a94b374b13db0
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 21:38:30 2017 -0500
+
+    Update gui.ml
+
+ gui.ml | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit b3d777b93b39160f5b8317f630f6ca24fb311641
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sat Dec 2 21:37:21 2017 -0500
+
+    Create gui.ml
+
+ gui.ml | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 54 insertions(+)
+
+commit 900825b397ef28e77b39c0e6bed08159d8d0ab2d
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sat Dec 2 21:06:50 2017 -0500
+
+    Updated hit_tile and fixed ship placement bug
+
+ game.ml | 73 ++++++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 31 insertions(+), 42 deletions(-)
+
+commit d753e83c9fe0d5b8b8b52af12000dd7f44c4a886
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Sat Dec 2 19:27:24 2017 -0500
+
+    Implemented hitting tiles
+
+ game.ml | 62 +++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 53 insertions(+), 9 deletions(-)
+
+commit 065ca7e981c6948eca6a86c0da7c7e00be93fe52
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Thu Nov 30 21:04:14 2017 -0500
+
+    Fixed turn progression in main and updated game
+
+ game.ml  | 92 +++++++++++++++++++++++++++++++---------------------------------
+ game.mli |  3 +++
+ main.ml  | 20 +++++++-------
+ 3 files changed, 58 insertions(+), 57 deletions(-)
+
+commit 46f66f32287e9330c66a56ec18f53143ea4f8b0c
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Thu Nov 30 20:37:50 2017 -0500
+
+    Fixed AI ship placement bug
+
+ game.ml | 87 +++++++++++++++++++++++++++++------------------------------------
+ main.ml |  2 +-
+ 2 files changed, 40 insertions(+), 49 deletions(-)
+
+commit ba4e375132db7cda988de00e80e122f596ea8846
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Thu Nov 30 18:35:50 2017 -0500
+
+    Update game.mli
+
+ game.mli | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit b9de47bbc327d038165f57d0c3befa966e65f3ca
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Thu Nov 30 18:34:57 2017 -0500
+
+    lines 445 - 470 cover ai placement
+
+ game.ml | 144 +++++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 121 insertions(+), 23 deletions(-)
+
+commit 359e26f51e847e1c8a8acb32bbec432d96fe3094
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Nov 29 23:37:46 2017 -0500
+
+    completed placing ships for player
+    
+    Still need to implement AI placement and get a working attack in
+
+ game.ml | 235 +++++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 129 insertions(+), 106 deletions(-)
+
+commit 353b0dbde83dcb51bd3cabb517f096f9e8480539
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Tue Nov 28 21:44:26 2017 -0500
+
+    Updated REPL
+
+ ai.ml    |  2 +-
+ game.ml  | 29 ++++++++++++++++-------------
+ game.mli |  9 ++++++---
+ main.ml  | 59 +++++++++++++++++++++++++++++++++++------------------------
+ main.mli | 11 ++---------
+ 5 files changed, 60 insertions(+), 50 deletions(-)
+
+commit dc4cadee387f88e3917bc8636bed35ad42b968a9
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Nov 27 22:45:05 2017 -0500
+
+    Implemented AI and updated Makefile
+
+ Makefile  | 16 ++++-----------
+ README.md | 38 +++++++++++++----------------------
+ ai.ml     | 69 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ai.mli    |  7 +++++++
+ game.ml   | 36 +++++++++++++++++++++++++--------
+ game.mli  | 33 ++++++++++++++++++++++++------
+ main.ml   |  9 +++++----
+ main.mli  |  6 +++---
+ 8 files changed, 157 insertions(+), 57 deletions(-)
+
+commit 5eac6fc4a0b81f8c3e840c1823416898e7d839ae
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 21:44:39 2017 -0500
+
+    Create Makefile
+
+ Makefile | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+commit fb106c2fd6cd9b258f2c24ccb7263242f940e551
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 21:43:56 2017 -0500
+
+    Update main.ml
+
+ main.ml | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 9f4716bae7ddda75ec721d33a2fc45ab126e28e9
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 21:43:22 2017 -0500
+
+    Create main.ml
+
+ main.ml | 48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 48 insertions(+)
+
+commit 06c6af2ebe77c2fdb9dc5e33a6eac60578d593ec
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 21:40:01 2017 -0500
+
+    Update command.mli
+
+ command.mli | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fe47265c3cc3ebffec56d3bf81cedc8a0cd719fe
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 21:39:38 2017 -0500
+
+    Update command.ml
+
+ command.ml | 81 ++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 44 insertions(+), 37 deletions(-)
+
+commit be5a4fe6106801100f5098437503c3f13d8dd462
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Mon Nov 27 19:24:26 2017 -0500
+
+    Update timeline.txt
+
+ timeline.txt | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+commit 240729ce116c5b3495cb574ffc19ead8cb9eb892
+Author: raj davae <rkd34@cornell.edu>
+Date:   Mon Nov 27 15:31:17 2017 -0500
+
+    implemented command.ml
+
+ command.ml | 60 +++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 47 insertions(+), 13 deletions(-)
+
+commit f703ca67387d594a80f15031c7e3b00145b319b6
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 26 21:46:21 2017 -0500
+
+    Update README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit f9f35ca3186e318663a589bee1d72768a324e246
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 26 21:45:42 2017 -0500
+
+    Incorporated a new command: display
+
+ game.ml | 164 +++++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 95 insertions(+), 69 deletions(-)
+
+commit 190fd309f69957f9610034e54a3b57c2687b3ab6
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 26 18:22:19 2017 -0500
+
+    Update timeline.txt
+
+ timeline.txt | 42 ++++++++++++------------------------------
+ 1 file changed, 12 insertions(+), 30 deletions(-)
+
+commit cf9ce22382a9c2ff0977737f6b10fca1bfb9e0c0
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 18:24:44 2017 -0500
+
+    Update README.md
+
+ README.md | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+
+commit 718fa1b1858f5515c95fd561c3490030b2f8be2f
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 18:15:14 2017 -0500
+
+    Update README.md
+
+ README.md | 36 +++++++++++++++++++++++++++++++++++-
+ 1 file changed, 35 insertions(+), 1 deletion(-)
+
+commit 50ac94f97f5557aace46b4c0bb76f4a19453dcb2
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 17:45:50 2017 -0500
+
+    Create game.ml
+
+ game.ml | 348 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 348 insertions(+)
+
+commit 2c63ef723d4c41fe2e6140fed4abc9272699496e
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 17:44:48 2017 -0500
+
+    Update command.ml
+
+ command.ml | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+
+commit a49f4527ff0b526109936d21911de5f26f4e2dd8
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 17:44:22 2017 -0500
+
+    Create command.ml
+
+ command.ml | 79 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 79 insertions(+)
+
+commit 4339f04820dcdf2f8c6a28d1a9ebfb27a04a6b0d
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 17:43:30 2017 -0500
+
+    Update command.mli
+
+ command.mli | 21 ++++-----------------
+ 1 file changed, 4 insertions(+), 17 deletions(-)
+
+commit d0b787a0882b433bafee89bd668efba52779df18
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Fri Nov 24 17:42:41 2017 -0500
+
+    Update game.mli
+
+ game.mli | 158 +++++++++++++++++++++------------------------------------------
+ 1 file changed, 51 insertions(+), 107 deletions(-)
+
+commit ddb590f60c35f5954c4ecb587b43024cf66ec8f1
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Nov 15 17:14:26 2017 -0500
+
+    Create test.mli
+
+ test.mli | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 105c79625132d0445cdc6e2a547f6d5748c46b69
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Wed Nov 15 00:05:19 2017 -0500
+
+    created a rough schedule for the project
+
+ timeline.txt | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+commit 49a92fa9c5d29c7801a00f6c8dfa2ed980da7b3a
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Tue Nov 14 22:08:58 2017 -0500
+
+    Added main.mli
+
+ main.mli | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit b9f339c9e1ad25ec7b2e609f0788c647fd85adad
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Nov 14 19:19:32 2017 -0500
+
+    Update game.mli
+
+ game.mli | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 9ba6e889a5b10df05ab0fefba4e238b594b0bc28
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Tue Nov 14 19:07:01 2017 -0500
+
+    wrote a possible implementation for init_state
+
+ game.mli | 25 +++++++++++++++----------
+ 1 file changed, 15 insertions(+), 10 deletions(-)
+
+commit 94b009e516beb08526f0bcda7463c95eecdeedca
+Author: Jeremy Lee <jrl352@cornell.edu>
+Date:   Mon Nov 13 21:53:35 2017 -0500
+
+    Updated specifications
+
+ command.mli |  38 ++++++++++++-------
+ game.mli    | 119 +++++++++++++++++++++++++++++++-----------------------------
+ 2 files changed, 87 insertions(+), 70 deletions(-)
+
+commit e3914724e51c4bde93d868608de6bdcff6455e02
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 18:19:02 2017 -0500
+
+    Update game.mli
+
+ game.mli | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 822d6b6a6c4a3dd99232b703620cb83a83e5ef92
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 18:12:20 2017 -0500
+
+    Update command.mli
+    
+    added new command place ship
+
+ command.mli | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 870f76eec5e725594cf963c957a94a1026bf3ee5
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:36:05 2017 -0500
+
+    Update game.mli
+    
+    Updated preconditions
+
+ game.mli | 35 +++++++++++++++++------------------
+ 1 file changed, 17 insertions(+), 18 deletions(-)
+
+commit 655331e0cdaacfc953e1d37bbd08adbd09977745
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:29:47 2017 -0500
+
+    Update command.mli
+
+ command.mli | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 8abeaaf705d1ddb2f48aa973ca3e0c7502bb87db
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:27:16 2017 -0500
+
+    Update command.mli
+    
+    added details on how command will work and what proper commands are
+
+ command.mli | 40 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 40 insertions(+)
+
+commit dfc05cf0475f9357c8161261e05332279e99a9a2
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:20:20 2017 -0500
+
+    Create command.mli
+
+ command.mli | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+commit 0672cc392d3f34e1e6878b6efbed0d8ba8a45b6f
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:19:46 2017 -0500
+
+    Update game.mli
+
+ game.mli | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 421a4f9d4a2b23fbce89d5399db8ef76d7093998
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:19:18 2017 -0500
+
+    Create game.mli
+    
+    Created mli file for game.ml
+
+ game.mli | 82 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 82 insertions(+)
+
+commit b52e4258847db5b2fc9e83484a8951b732fcf49d
+Author: Ritvik Taneja <rt328@cornell.edu>
+Date:   Sun Nov 5 17:18:51 2017 -0500
+
+    Create README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
